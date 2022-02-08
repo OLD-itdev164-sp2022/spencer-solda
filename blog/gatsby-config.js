@@ -10,6 +10,8 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -17,8 +19,6 @@ module.exports = {
         accessToken: `O1pzfe4eRrSRk6xnpzYL0NXUoaLnvimY1Xnzy0oNJLY`
       }
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
